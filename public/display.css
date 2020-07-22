@@ -1,0 +1,246 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body
+{
+    /* background: linear-gradient(to right, #C5C499, #49a09d); */
+    /* background: linear-gradient(to right, #20002c, #cbb4d4); */
+    /* background: linear-gradient(to right, #1a2980, #26d0ce); */
+    /* background: linear-gradient(to left, #ff4b60, #6b6b83, #3b8d99);  */
+    /* background: linear-gradient(to right, #114357, #B29492, #114357); */
+    background: linear-gradient(to right, #0b8793, #360033);
+    /* background: linear-gradient(to left, #4ecdc4, #556270); */
+    /* background: linear-gradient(to left, #bdc3c7, #2c3e50); */
+}
+
+.nav-bar
+{
+    padding: 0.3em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin: 0;
+    background: rgba(0,0,0,0.5);
+    /* box-shadow: ; */
+    width: 100%;
+    min-height: 4em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.scroll
+{
+    float: left;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.7em;
+    margin-left: 0.7em;
+}
+a
+{
+    text-decoration: none;
+    color:white;
+    text-shadow: 1px 5px 4px black ;
+    font-weight: bold;
+}
+
+ a:hover
+{
+    text-shadow: 1px 3px #0b8793; 
+}
+
+.search
+{
+    /* border: 2px solid red; */
+    width: 40%;
+    max-width: 25em;
+    padding-right: 0.4em;
+    margin-left: 0.5em;
+    background: rgba(255,255,255,0.1);
+    border-bottom: 1px solid white;
+}
+form
+{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#search-bar
+{
+    padding-top: 0.4em;
+    padding-bottom: 0.1em;
+    padding-left: 0.5em;
+    margin: 0;
+    font-size: 1.1em;
+    border: none;
+    background: none;
+    width: 94%;
+    color: white;
+}
+
+.search:active, .search:hover
+{
+    background: rgba(255,255,255,0.2);
+}
+
+#search-icon
+{
+    font-size: 1.2em;
+    border: none;
+    background: none;
+    color: silver;
+    cursor: pointer;
+}
+
+#search-icon:hover,#search-icon:active
+{
+    font-size: 1.3em;
+}
+
+.menu-btn
+{
+    margin-left: auto;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+
+.ham
+{
+    display: block;
+    width: 2em;
+    height: 0.25em;
+    border-radius: 10px;;
+    margin: 4px 0;
+    background: whitesmoke;
+    z-index: 99;
+}
+
+.ham:hover,.ham:active
+{
+    margin: 7px;
+}
+
+.menu
+{   
+    line-height: 1.5em;
+    width: 25%;
+    max-width: 9em;
+    float: right;
+    font-size: 1.2em;
+    display: none;
+    z-index: 80;
+    /* background: rgba(0,0,0,1); */
+    border-radius: 50px;
+}
+.menu li
+{
+    list-style: none;
+    text-align: center;
+    padding: 0.5em;
+    background: #1a021b;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+.menu li a
+{
+    color:silver;;
+}
+
+.expand {
+ display: block; 
+}
+
+.container
+{
+    z-index: 30;
+    background-color: rgba(0,0,0,0.5);
+    margin: 2em auto;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+    border: 2px solid black;
+    color: silver;
+}
+
+.bottom-half
+{
+    margin: 0em 1em 1em 1em;
+    padding: 2em;
+}
+
+.post-container
+{
+    padding: 1em;
+    box-shadow: 2px 3px 20px 0.7px black;
+}
+
+.first-line
+{
+    font-size: 2em;
+    /* font-weight: bold; */
+    padding-left: 0.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: whitesmoke;
+}
+
+.second-line
+{
+    margin-top: 0.5em;
+    padding: 0 0.2em 0.5em 0.2em;
+    font-size: 1.3em;
+}
+
+.second-line li
+{
+    list-style: none;
+    display: inline-block;
+    font-weight: lighter;
+}
+
+.date
+{
+    float: right;
+    padding-right: 0.5em;
+}
+
+hr
+{
+    border: 0.4px solid goldenrod;
+}
+
+.content
+{
+    padding: 0.8em 0.6em 0.8em 0.6em;
+    text-align: justify;
+    color: silver;
+    font-size: 1.2em;
+    line-height: 35px;
+}
+
+.tags
+{
+    padding-top: 0.2em;
+}
+
+.tags li
+{
+    list-style: none;
+    display: inline-block;
+    border: 2px solid darkgoldenrod;
+    color: #360033;
+    font-weight: bold;
+    background: #0b8793;
+    border-radius: 8px;
+    margin: 0.5em 0.8em 0em 0.8em;
+    padding: 0.5em 0.8em 0.5em 0.8em;
+    box-shadow: 1px 1px 3px 1px black;
+}

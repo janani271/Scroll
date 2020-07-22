@@ -1,0 +1,110 @@
+*
+{
+    box-sizing: border-box;
+}
+
+*:focus
+{
+    outline: none;
+}
+
+body
+{
+    background: linear-gradient(to right, #20002c, #cbb4d4);
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Amarante', cursive; */
+    /* font-family: 'Josefin Slab', serif; */
+}
+
+.container
+{
+    background-color: rgba(0, 0, 0, 0.47);
+    box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    position: relative;
+    margin: 5% auto;
+    width: 80%;
+    height: 80%;
+    min-height: 35em;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    display: block;
+    text-transform: uppercase;
+    padding: 1em;
+    margin: 0;
+    color: whitesmoke;
+}
+
+form
+{
+    display: block;
+    width: 100%;
+    padding: 2em;
+}
+
+.left-half
+{
+    flex: 1;
+    padding: 1em 1em 2em 1em;
+    margin: 0;
+}
+
+.right-half
+{
+    flex: 1;
+    background: url("https://wallup.net/wp-content/uploads/2017/11/22/336981-books-748x623.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+input
+{
+    display: inline-block;
+    padding: 0.75em 0em 0.75em 1em;
+    margin: 0 0 2em 2em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.register
+{
+    display: block;
+    background-color: #C4C3D0; 
+    border: none;
+    font-size: 1em;
+    padding: 0.5em 2em;
+    margin: 1em auto 0 auto;
+    border-radius: 5px;
+}
+
+.register:hover, .register:active
+{
+    background-color:silver;
+}
+
+.forgot
+{
+    color:silver;
+    line-height: 1.5em;
+    font-size: 1em;
+    display: block;
+    position: relative;
+    padding: 0.5em 1em 0em 1em;
+    text-align: center;
+}
+
+.forgot:hover
+{
+    color: whitesmoke;
+}

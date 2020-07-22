@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/dc60e27d52.js"></script>
+    <link rel="stylesheet" href="multipost.css">
+    <title>Scroll - Home</title>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <div class="scroll">
+            <a href="/">Scroll</a>
+        </div>
+        <div class="search">
+            <form action="/search-posts" method="POST">
+                <input name="author" type="text" placeholder="Search" id="search-bar" required>
+                <button id="search-icon" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="menu-btn">
+            <span class="ham"></span>
+            <span class="ham"></span>
+            <span class="ham"></span>
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="/create-post">Publish Post</a></li>
+            <li><a href="/my-posts">My Posts</a></li>
+            <li><a href="/logout">Log Out</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="top-half">
+            <h3>Welcome!<span id="search-result"></span></h3>
+        </div>
+
+        <div class="bottom-half">
+            <% for(var i=0; i<posts.length; i++){ %>
+                <a href = "/show-post?id=<%= posts[i].post_id %>">
+                    <div class="post-container">
+                        <div class="first-line">
+                            <%= posts[i].title %> 
+                        </div>
+                        <div class="second-line">
+                            <ul>
+                                <li class="author"><%= posts[i].uname %></li>
+                            </ul>
+                        </div>
+                        <hr>                    
+                        <div class="description">
+                            <%= posts[i].desc %> 
+                        </div>
+                        <div class="tags">
+                            <ul>
+                                <li><a href = "/edit-post?id=<%= posts[i].post_id %>">Edit</a></li>
+                                <li><a href = "/delete-post?id=<%= posts[i].post_id %>">Delete</a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </a>
+            <% } %>
+
+        </div>
+
+        <button id="loadmore">Load More</button>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="multipost.js"></script>
+
+</body>
+</html>

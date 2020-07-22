@@ -1,0 +1,25 @@
+{
+  "name": "scroll",
+  "version": "1.0.0",
+  "description": "My blog website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "janani",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pg": "^7.18.2",
+    "request": "^2.88.2",
+    "session": "^0.1.0"
+  }
+}

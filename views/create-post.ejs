@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/dc60e27d52.js"></script>
+    <link rel="stylesheet" href="create-post.css">
+    <!-- <link rel="stylesheet" href="multipost1.css"> -->
+    <title>Scroll - single Post</title>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <div class="scroll">
+            <a href="/">Scroll</a>
+        </div>
+        <div class="search">
+            <form action="/search-posts" method="POST">
+                <input name="author" type="text" placeholder="Search" id="search-bar" required>
+                <button id="search-icon" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="menu-btn">
+            <span class="ham"></span>
+            <span class="ham"></span>
+            <span class="ham"></span>
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="/create-post">Publish Post</a></li>
+            <li><a href="/my-posts">My Posts</a></li>
+            <li><a href="/logout">Log Out</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <h3>Post Details</h3>
+            <form id="post-info" action="create-post" method="POST">
+                <input type="text" size="60" name="title" placeholder="Enter Post Title">
+                <textarea name="des" form="post-info" cols="50" rows="5" placeholder="Enter a short description about the post"></textarea>
+                <textarea name="content" form="post-info" cols="50" rows="5" placeholder="Enter the post content"></textarea>
+                <!-- <input type="text" size="60" placeholder="Enter Post Tags(comma to separate tags)"> -->
+                <div id="submit-area">
+                    <button type="submit" class="btn">Create Post!</button>
+                    <button type="reset" class="btn">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="create-post.js"></script>
+
+</body>
+</html>

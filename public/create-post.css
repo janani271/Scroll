@@ -1,0 +1,234 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body
+{
+    background: linear-gradient(to right, #0b8793, #360033);
+}
+
+.nav-bar
+{
+    padding: 0.3em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin: 0;
+    background: rgba(0,0,0,0.5);
+    /* box-shadow: ; */
+    width: 100%;
+    min-height: 4em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.scroll
+{
+    float: left;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.7em;
+    margin-left: 0.7em;
+}
+a
+{
+    text-decoration: none;
+    color:white;
+    text-shadow: 1px 5px 4px black ;
+    font-weight: bold;
+}
+
+ a:hover
+{
+    text-shadow: 1px 3px #0b8793; 
+}
+
+.search
+{
+    /* border: 2px solid red; */
+    width: 40%;
+    max-width: 25em;
+    padding-right: 0.4em;
+    margin-left: 0.5em;
+    background: rgba(255,255,255,0.1);
+    border-bottom: 1px solid white;
+}
+#search-form
+{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#search-bar
+{
+    padding-top: 0.4em;
+    padding-bottom: 0.1em;
+    padding-left: 0.5em;
+    margin: 0;
+    font-size: 1.1em;
+    border: none;
+    background: none;
+    width: 94%;
+    color: white;
+}
+
+.search:active, .search:hover
+{
+    background: rgba(255,255,255,0.2);
+}
+
+#search-icon
+{
+    font-size: 1.2em;
+    border: none;
+    background: none;
+    color: silver;
+    cursor: pointer;
+}
+
+#search-icon:hover,#search-icon:active
+{
+    font-size: 1.3em;
+}
+
+.menu-btn
+{
+    margin-left: auto;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+
+.ham
+{
+    display: block;
+    width: 2em;
+    height: 0.25em;
+    border-radius: 10px;;
+    margin: 4px 0;
+    background: whitesmoke;
+    z-index: 99;
+}
+
+.ham:hover,.ham:active
+{
+    margin: 7px;
+}
+
+.menu
+{   
+    line-height: 1.5em;
+    width: 25%;
+    max-width: 9em;
+    float: right;
+    font-size: 1.2em;
+    display: none;
+    z-index: 80;
+    border-radius: 50px;
+}
+.menu li
+{
+    list-style: none;
+    text-align: center;
+    padding: 0.5em;
+    background: #1a021b;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+.menu li a
+{
+    color:silver;
+}
+
+.expand {
+ display: block; 
+}
+
+.container
+{
+    z-index: 30;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0em auto;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+    /* border: 2px solid black; */
+    box-shadow: 1px 1px 10px 2px black;
+    color: silver;
+    display: flex;
+    flex-direction: row;
+}
+
+#post-info
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0em 1em 1em 1em;
+}
+
+#post-info input,textarea 
+{
+    margin: 1em auto;
+    padding: 0.5em 1em 0.5em 1em;
+    font-size: 1em;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+#post-info input:hover,#post-info textarea:hover,#post-info input:focus,#post-info textarea:focus
+{
+    box-shadow: 2px 2px 5px 3px #0b8793;
+}
+
+#submit-area
+{
+    display: flex;
+    margin: 0 auto;
+}
+.btn
+{
+    width: 50%;
+    margin: 1em;
+    padding: 0em 1em 0em 1em;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #0b8793;
+    color: whitesmoke;
+    transition: background 1s;
+}
+
+.btn:hover,.btn:focus
+{
+    background: #360033;
+}
+
+.left
+{
+    padding: 1em;
+}
+
+.right
+{
+    flex: 1;
+    background: url("https://wallup.net/wp-content/uploads/2017/11/22/336981-books-748x623.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h3
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 8px;
+    text-shadow: 3px 5px black;
+    font-size: 1.6em;
+}
